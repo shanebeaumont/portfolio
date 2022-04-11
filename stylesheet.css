@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, nav, h2, h3 {
+  margin: 0 !important;
+}
+
+body, header, main {
+  min-height: 100vh;
+}
+
+body {
+  background-color: #0e1417;
+  color: #83a4b5;
+  font-family: 'Roboto Slab', serif;
+}
+
+nav, #title-overlay, #email {
+  position: fixed;
+  left: 0;
+  width: calc(100vw/3);
+}
+
+nav, #title-overlay {
+  top: 0;
+}
+
+nav, h3, #email {
+  text-align: center;
+}
+
+h2, h3, nav a:hover, #email-link {
+  color: #9f9f9f;
+}
+
+h2, h3, nav a, .title-highlight {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+nav {
+  z-index: 1;
+  padding-top: 2rem;
+}
+
+nav a {
+  color: #0e1417;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 0 4rem 3.25rem 4rem !important;
+}
+
+h2, #email {
+  font-size: 1.5rem;
+}
+
+h2 {
+  padding: 4rem 0 2rem 0;
+}
+
+hr {
+  border: 0;
+	border-bottom: solid 2px #9f9f9f;
+  margin: 2rem 0 0 0;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+#title-overlay {
+  background: url(./images/mountain-background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+#title {
+  display: inline-block;
+  color: #002639;
+  font-size: 1.25rem;
+  text-align: right;
+  line-height: 2rem;
+  width: 100%;
+  padding: 25vh 4rem 0 4rem;
+}
+
+#email {
+  bottom: 0;
+  background-color: #0e1417;
+  padding: 2rem 0;
+}
+
+#content {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.title-highlight {
+  display: inline;
+  color: #0e1417;
+  font-size: 2rem;
+}
+
+.preview img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* testdome start */
+
+.testdome-certificate-stamp {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  width: 185px;
+  height: 120px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+  margin: 0.75rem;
+  position: relative;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.testdome-certificate-stamp span.testdome-certificate-name {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.testdome-certificate-stamp span.testdome-certificate-card-logo {
+  position: absolute;
+  bottom: 5px;
+}
+
+.testdome-certificate-stamp:hover {
+  text-decoration: none;
+}
+
+.testdome-certificate-stamp:hover span {
+  text-decoration: none;
+}
+
+.testdome-certificate-stamp.gold {
+  background-image: url("./images/certificates/testdome-stamp-gold.png");
+}
+
+.testdome-certificate-stamp.silver {
+  background-image: url("https://app.testdome.com/content/images/stamp-silver.png?v=2")
+}
+
+.testdome-certificate-stamp span {
+  display: block;
+  color: #ffffff;
+  font-size: 11px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+/* testdome end */
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 100% !important;
+  }
+
+  nav, nav a {
+    display: none;
+  }
+
+  main {
+    width: 100% !important;
+  }
+
+  #title-overlay {
+    position: static;
+    width: 100%;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  #email {
+    z-index: 1;
+    bottom: calc(100vh - 4rem);
+    width: 100%;
+    background-color: #0e1417;
+    padding: 1rem 0;
+  }
+}
