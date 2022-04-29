@@ -112,6 +112,11 @@ h3 {
 .preview img {
   max-width: 100%;
   border-radius: 0.5rem;
+  margin: 0.75rem;
+}
+
+.fa-react {
+  color: #5fd9fb;
 }
 
 /* testdome start */
@@ -127,6 +132,7 @@ h3 {
   text-align: left;
   padding: 10px;
   margin: 0.75rem;
+  border-radius: 0.5rem;
   position: relative;
   box-sizing: border-box;
   text-transform: uppercase;
