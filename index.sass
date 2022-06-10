@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap')
+
+body
+  min-height: 100vh
+  background-color: #0e1417
+  color: #83a4b5
+  font-family: 'Roboto Slab', serif
+  margin: 0 !important
+
+header
+  min-height: 100vh
+
+nav
+  z-index: 1
+  position: fixed
+  top: 0
+  left: 0
+  width: calc(100vw / 3)
+  text-align: center
+  padding-top: 2rem
+  margin: 0 !important
+
+  a
+    color: #0e1417
+    font-size: 1.25rem
+    font-weight: 700
+
+    &:hover
+      color: #9f9f9f
+
+a
+  text-decoration: none
+
+#title-overlay
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  background-image: url(./images/mountain-background.jpg)
+  background-size: cover
+  width: calc(100vw / 3)
+
+#title
+  display: inline-block
+  width: 100%
+  color: #002639
+  font-size: 1.25rem
+  text-align: right
+  line-height: 2rem
+  padding: 25vh 4rem 0 4rem
+
+.title-highlight
+  display: inline
+  color: #0e1417
+  font-size: 2rem
+  font-weight: 700
+      
+h2
+  color: #9f9f9f
+  font-size: 1.5rem
+  font-weight: 700
+  padding: 4rem 0 2rem 0
+  margin: 0 !important
+
+h3
+  color: #9f9f9f
+  font-size: 1.25rem
+  font-weight: 700
+  text-align: center
+  padding: 1rem 0
+  margin: 0 !important
+
+#email
+  position: fixed
+  bottom: 0
+  left: 0
+  width: calc(100vw / 3)
+  background-color: #0e1417
+  font-size: 1.5rem
+  text-align: center
+  padding: 2rem 0
+
+#email-link
+  color: #9f9f9f
+
+main
+  min-height: 100vh
+  padding: 0 4rem 3.25rem 4rem !important
+
+#content
+  max-width: 992px
+  margin: 0 auto
+
+hr
+  border: 0
+  border-bottom: solid 2px #9f9f9f
+  margin: 2rem 0 0 0
+
+.preview
+  img
+    max-width: 100%
+    border-radius: 0.5rem
+    margin: 0.75rem
+
+.fa-react
+  color: #5fd9fb
+
+.testdome-certificate-stamp
+  position: relative
+  display: block
+  width: 185px
+  height: 120px
+  background-position: center center
+  background-repeat: no-repeat
+  font-family: Arial, Helvetica, sans-serif
+  text-transform: uppercase
+  text-decoration: none
+  text-align: left
+  border-radius: 0.5rem
+  padding: 10px
+  margin: 0.75rem
+
+  span
+    display: block
+    color: #ffffff
+    font-size: 11px
+    text-decoration: none
+    margin-bottom: 5px
+
+  .testdome-certificate-name
+    font-size: 14px
+    text-transform: none
+
+  .testdome-certificate-card-logo
+    position: absolute
+    bottom: 5px
+
+  &:hover
+    text-decoration: none
+
+    span
+      text-decoration: none
+
+.testdome-certificate-stamp.silver
+  background-image: url(https://app.testdome.com/content/images/stamp-silver.png?v=2)
+
+.testdome-certificate-stamp.gold
+  background-image: url(./images/certificates/testdome-stamp-gold.png)
+
+@media (max-width: 1200px)
+  header
+    width: 100% !important
+
+  nav
+    display: none
+
+    a
+      display: none
+
+  #title-overlay
+    position: static
+    background-position: center
+    width: 100%
+
+  #title
+    text-align: center
+  
+  #email
+    z-index: 1
+    bottom: calc(100vh - 4rem)
+    width: 100%
+    background-color: #0e1417
+    padding: 1rem 0
+
+  main
+    width: 100% !important
