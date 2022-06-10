@@ -129,6 +129,7 @@ hr {
 
 .fa-react {
   color: #5fd9fb;
+  animation: 6s infinite linear clockwise-rotate;
 }
 
 .testdome-certificate-stamp {
@@ -239,6 +240,14 @@ hr {
   }
   100% {
     opacity: 100%;
+  }
+}
+@keyframes clockwise-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
   }
 }
 
