@@ -121,6 +121,7 @@ hr {
   border-radius: 0.5rem;
   border: 4px solid rgba(0, 0, 0, 0);
   margin: 0.75rem;
+  transition: all 0.25s ease;
 }
 .preview img:hover {
   max-width: 100%;
@@ -147,6 +148,7 @@ hr {
   border: 2px solid rgba(0, 0, 0, 0);
   padding: 10px;
   margin: 0.75rem;
+  transition: all 0.25s ease;
 }
 .testdome-certificate-stamp span {
   display: block;
