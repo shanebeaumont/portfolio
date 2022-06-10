@@ -28,6 +28,8 @@ nav
     &:hover
       color: #9f9f9f
 
+  animation: 0.75s ease-out slide-in-top
+
 a
   text-decoration: none
 
@@ -48,6 +50,7 @@ a
   text-align: right
   line-height: 2rem
   padding: 25vh 4rem 0 4rem
+  animation: 0.75s ease-out slide-in-left
 
 .title-highlight
   display: inline
@@ -79,6 +82,7 @@ h3
   font-size: 1.5rem
   text-align: center
   padding: 2rem 0
+  animation: 0.75s ease-out slide-in-bottom
 
 #email-link
   color: #9f9f9f
@@ -86,6 +90,7 @@ h3
 main
   min-height: 100vh
   padding: 0 4rem 3.25rem 4rem !important
+  animation: 0.75s ease-in fade-in
 
 #content
   max-width: 992px
@@ -164,6 +169,7 @@ hr
 
   #title
     text-align: center
+    animation: 0.75s ease-in fade-in
   
   #email
     z-index: 1
@@ -171,6 +177,31 @@ hr
     width: 100%
     background-color: #0e1417
     padding: 1rem 0
+    animation: 0.75s ease-out slide-in-top
 
   main
     width: 100% !important
+    
+@keyframes slide-in-top
+  0%
+    transform: translateY(-100%)
+  100%
+    transform: translateY(0)
+
+@keyframes slide-in-left
+  0%
+    transform: translateX(-100%)
+  100%
+    transform: translateX(0)
+
+@keyframes slide-in-bottom
+  0%
+    transform: translateY(100%)
+  100%
+    transform: translateY(0)
+
+@keyframes fade-in
+  0%
+    opacity: 0%
+  100%
+    opacity: 100%
