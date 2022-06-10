@@ -95,6 +95,9 @@ h3 {
 #email-link {
   color: #9f9f9f;
 }
+#email-link:hover {
+  color: white;
+}
 
 main {
   min-height: 100vh;
