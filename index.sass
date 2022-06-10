@@ -103,9 +103,14 @@ hr
 
 .preview
   img
-    max-width: 100%
+    max-width: calc(100% - 2px)
     border-radius: 0.5rem
+    border: 4px solid rgba(0, 0, 0, 0)
     margin: 0.75rem
+
+    &:hover
+      max-width: 100%
+      border: 2px solid #83a4b5
 
 .fa-react
   color: #5fd9fb
@@ -113,8 +118,8 @@ hr
 .testdome-certificate-stamp
   position: relative
   display: block
-  width: 185px
-  height: 120px
+  width: 189px
+  height: 124px
   background-position: center center
   background-repeat: no-repeat
   font-family: Arial, Helvetica, sans-serif
@@ -122,6 +127,7 @@ hr
   text-decoration: none
   text-align: left
   border-radius: 0.5rem
+  border: 2px solid rgba(0, 0, 0, 0)
   padding: 10px
   margin: 0.75rem
 
@@ -142,6 +148,7 @@ hr
 
   &:hover
     text-decoration: none
+    border: 2px solid #83a4b5
 
     span
       text-decoration: none
