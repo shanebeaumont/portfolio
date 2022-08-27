@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
 html {
   background-color: #0e1417;
 }
@@ -6,7 +10,8 @@ body {
   min-height: 100vh;
   background-color: #0e1417;
   color: #83a4b5;
-  font-family: "Roboto Slab", serif;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
   margin: 0 !important;
 }
 
@@ -27,14 +32,15 @@ nav {
   left: 0;
   width: 33.3333333333vw;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 32px;
   margin: 0 !important;
   animation: 1s ease-out slide-in-top;
 }
 nav a {
   color: #0e1417;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
+  padding: 0 !important;
 }
 nav a:hover {
   color: #9f9f9f;
@@ -58,34 +64,38 @@ a {
   display: inline-block;
   width: 100%;
   color: #002639;
-  font-size: 1.25rem;
+  font-size: 20px;
   text-align: right;
-  line-height: 2rem;
-  padding: 25vh 4rem 0 0;
+  line-height: 32px;
+  padding: 25vh 64px 0 64px;
   animation: 1s ease-out slide-in-left, 0.75s ease-in fade-in;
+}
+
+.mw1400, .mw402 {
+  display: none;
 }
 
 .title-highlight {
   display: inline;
   color: #0e1417;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
 h2 {
   color: #9f9f9f;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
-  padding: 4rem 0 2rem 0;
+  padding: 64px 0 32px 0;
   margin: 0 !important;
 }
 
 h3 {
   color: #9f9f9f;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0;
+  padding: 16px 0;
   margin: 0 !important;
 }
 
@@ -95,9 +105,9 @@ h3 {
   left: 0;
   width: 33.3333333333vw;
   background-color: #0e1417;
-  font-size: 1.5rem;
+  font-size: 24px;
   text-align: center;
-  padding: 2rem 0;
+  padding: 32px 0;
   animation: 1s ease-out slide-in-bottom;
 }
 
@@ -110,7 +120,7 @@ h3 {
 
 main {
   min-height: 100vh;
-  padding: 0 4rem 3.25rem 4rem !important;
+  padding: 0 64px 52px 64px !important;
   animation: 1s ease-in fade-in;
 }
 
@@ -122,14 +132,14 @@ main {
 hr {
   border: 0;
   border-bottom: solid 2px #9f9f9f;
-  margin: 2rem 0 0 0;
+  margin: 32px 0 0 0;
 }
 
 .preview img {
   max-width: calc(100% - 2px);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: 4px solid rgba(0, 0, 0, 0);
-  margin: 0.75rem;
+  margin: 12px;
   transition: all 0.25s ease;
 }
 .preview img:hover {
@@ -153,10 +163,10 @@ hr {
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: 2px solid rgba(0, 0, 0, 0);
   padding: 10px;
-  margin: 0.75rem;
+  margin: 12px;
   transition: all 0.25s ease;
 }
 .testdome-certificate-stamp span {
@@ -190,7 +200,12 @@ hr {
   background-image: url(./images/certificates/testdome-stamp-gold.png);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1592px) {
+  .mw1400 {
+    display: inline;
+  }
+}
+@media (max-width: 1315px) {
   header {
     width: 100% !important;
     padding: 0 !important;
@@ -211,6 +226,9 @@ hr {
     padding: 25vh 0 0 0;
     animation: 1s ease-in fade-in;
   }
+  .mw1400 {
+    display: none;
+  }
   #email {
     z-index: 1;
     bottom: calc(100vh - 4rem);
@@ -221,6 +239,11 @@ hr {
   }
   main {
     width: 100% !important;
+  }
+}
+@media (max-width: 402px) {
+  .mw402 {
+    display: inline;
   }
 }
 @keyframes slide-in-top {
@@ -264,4 +287,4 @@ hr {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */
