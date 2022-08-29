@@ -92,6 +92,8 @@ h2 {
 }
 
 h3 {
+  position: relative;
+  right: 12.5px;
   color: #9f9f9f;
   font-size: 20px;
   font-weight: bold;
