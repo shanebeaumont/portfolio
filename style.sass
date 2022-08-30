@@ -1,6 +1,6 @@
 @font-face
   font-family: 'Roboto'
-  src: url(fonts/Roboto-Regular.ttf) format('truetype')
+  src: url(./fonts/Roboto-Regular.ttf) format('truetype')
 
 html
   background-color: #0e1417
@@ -20,7 +20,7 @@ header
   width: calc(100vw / 3)
   min-height: 100vh
   padding: 0
-  animation: 1s ease-in fade-in
+  animation: 1s ease-out slide-in-left
 
 nav
   z-index: 1
@@ -32,6 +32,8 @@ nav
   padding-top: 32px
   margin: 0 !important
   animation: 1s ease-out slide-in-top
+  animation-delay: 2s
+  animation-fill-mode: backwards
 
   a
     color: #0e1417
@@ -45,7 +47,7 @@ nav
 a
   text-decoration: none
 
-#title-overlay
+#title-container
   width: calc(100vw / 3)
   height: 100vh
   position: fixed
@@ -62,7 +64,16 @@ a
   text-align: right
   line-height: 32px
   padding: 25vh 64px 0 64px
-  animation: 1s ease-out slide-in-left, 0.75s ease-in fade-in
+
+  div:first-child
+    animation: 1s ease-out slide-in-left, 0.75s ease-in fade-in
+    animation-delay: 0.25s
+    animation-fill-mode: backwards
+
+  div:last-child
+    animation: 1s ease-out slide-in-left, 0.75s ease-in fade-in
+    animation-delay: 0.5s
+    animation-fill-mode: backwards
 
 .mw1400, .mw402
   display: none
@@ -101,17 +112,21 @@ h3
   text-align: center
   padding: 32px 0
   animation: 1s ease-out slide-in-bottom
+  animation-delay: 2.5s
+  animation-fill-mode: backwards
 
-#email-link
-  color: #9f9f9f
+  a
+    color: #9f9f9f
 
-  &:hover
-    color: white
+    &:hover
+      color: white
 
 main
   min-height: 100vh
-  padding: 0 64px 52px 64px !important
+  padding: 0 64px 12px 64px !important
   animation: 1s ease-in fade-in
+  animation-delay: 1.5s
+  animation-fill-mode: backwards
 
 #content
   max-width: 1056px
@@ -192,6 +207,7 @@ hr
   header
     width: 100% !important
     padding: 0 !important
+    animation: 1s ease-in fade-in
 
   nav
     display: none
@@ -199,7 +215,7 @@ hr
     a
       display: none
 
-  #title-overlay
+  #title-container
     position: static
     background-position: center
     width: 100%
@@ -207,7 +223,11 @@ hr
   #title
     text-align: center
     padding: 25vh 0 0 0
-    animation: 1s ease-in fade-in
+
+    div:last-child
+      animation: 1s ease-out slide-in-right
+      animation-delay: 0.5s
+      animation-fill-mode: backwards
 
   .mw1400
     display: none
@@ -217,10 +237,11 @@ hr
     width: 100%
     background-color: #0e1417
     padding: 16px 0
-    animation: 1s ease-out slide-in-bottom
+    animation-delay: 1s
 
   main
     width: 100% !important
+    animation-delay: 0s
 
 @media (max-width: 491px)
   #email
@@ -255,9 +276,9 @@ hr
   100%
     transform: translateY(0)
 
-@keyframes slide-in-left
+@keyframes slide-in-right
   0%
-    transform: translateX(-200%)
+    transform: translateX(300%)
 
   100%
     transform: translateX(0)
@@ -268,6 +289,13 @@ hr
 
   100%
     transform: translateY(0)
+
+@keyframes slide-in-left
+  0%
+    transform: translateX(-300%)
+
+  100%
+    transform: translateX(0)
 
 @keyframes fade-in
   0%
